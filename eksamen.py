@@ -64,7 +64,7 @@ antall_pr_fag: dict[str, float] = {}
 muligheter: list = []
 if TRINN == 1:
     for fag in skriftlige_fag:
-        antall_pr_fag[fag] = 0.2
+        antall_pr_fag[fag] = 0.2 # 0.2 pga 20% sjanse for eksamen
         muligheter.append(fag)
     for fag in muntlige_fag:
         if fag in antall_pr_fag:
@@ -75,7 +75,7 @@ if TRINN == 1:
 
 elif TRINN == 2:
     for fag in skriftlige_fag:
-        antall_pr_fag[fag] = 1
+        antall_pr_fag[fag] = 1 # Garantert 1 eksamen
         muligheter.append(fag)
     for fag in muntlige_fag:
         if fag in antall_pr_fag:
